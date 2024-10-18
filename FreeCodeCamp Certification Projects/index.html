@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="details">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam at
+          eaque veniam magni quae aspernatur delectus atque dignissimos, odit
+          amet! Sunt cumque alias reprehenderit, odit fugit consectetur quod
+          nulla praesentium ut itaque.
+        </p>
+      </div>
+      <form id="survey-form">
+        <label for="name" id="name-label"
+          >Enter your name:
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            name="name"
+          />
+        </label>
+
+        <label for="email" id="email-label"
+          >Enter your email:
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            name="email"
+          />
+        </label>
+
+        <label for="number" id="number-label"
+          >Enter your age:
+          <input
+            type="number"
+            id="number"
+            placeholder="Enter your age"
+            name="number"
+            min="18"
+            max="99"
+          />
+        </label>
+
+        <label for="dropdown">Select your gender: </label>
+        <select id="dropdown" name="dropdown">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <label class="checkbox">
+          <p>Select your profession:</p>
+          <input type="checkbox" value="profession" name="profession" />Teacher
+          <input type="checkbox" value="profession" name="profession" />Student
+          <input
+            type="checkbox"
+            value="profession"
+            name="profession"
+          />Professor
+        </label>
+        <label>
+          <p>Select an option:</p>
+          <input
+            type="radio"
+            id="option1"
+            name="radio"
+            value="option1"
+          />Option1
+          <input
+            type="radio"
+            id="option2"
+            name="radio"
+            value="option2"
+          />Option2
+          <input
+            type="radio"
+            id="option3"
+            name="radio"
+            value="option3"
+          />Option3
+        </label>
+        <label for="textarea">Textarea: </label
+        ><textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
